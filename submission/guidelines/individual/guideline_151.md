@@ -19,8 +19,10 @@ Nhãn dùng để huấn luyện mô hình phát hiện **người và phương 
 | `car` | Ô tô con, SUV. | Sedan, hatchback, wagon, SUV/crossover đang chạy hoặc đỗ. | Xe tải có thùng hàng riêng là `truck`; xe thùng kín cỡ nhỏ là `van`. |
 | `truck` | Xe tải, xe có thùng hàng riêng. | Xe tải thùng, xe tải sàn, xe tải chở ô tô. | Ô tô con/SUV chở đồ bên trong vẫn là `car`; xe thùng kín cỡ nhỏ dạng van là `van`. |
 | `van` | Xe thùng kín cỡ nhỏ. | Xe giao hàng thân kín cỡ nhỏ, khoang hàng liền khối với cabin. | Xe tải có thùng hàng riêng là `truck`; SUV chở người là `car`. |
-| `motorcycle` | Xe gắn máy, mô tô. | Xe máy/scooter hai bánh có hoặc không có người lái. | Xe đạp không động cơ và tuk-tuk/xe ba bánh không thuộc lớp này; không ép sang lớp gần giống. |
+| `motorcycle` | Xe gắn máy, mô tô. | Xe máy/scooter hai bánh có hoặc không có người lái. | Xe đạp không động cơ không thuộc lớp này; tuk-tuk/xe ba bánh gán `tuk_tuk`, không ép sang `motorcycle`. |
 | `person` | Người đi bộ hoặc người ngồi trên xe. | Người đi bộ, người lái hoặc ngồi sau xe máy, người ngồi trong xe nếu nhìn thấy rõ. | Tượng, mannequin, người trong tranh/ảnh/màn hình hoặc hình phản chiếu không phải người thật trong cảnh. |
+| `bus` | Xe cơ giới chuyên chở nhiều hành khách trong một khoang dài. | Xe buýt đô thị và xe khách. | Xe van/minivan thuộc `van`; xe chở hàng thuộc `truck`. |
+| `tuk_tuk` | Xe cơ giới ba bánh kiểu tuk-tuk, dùng chở người hoặc hàng. | Tuk-tuk | Không gán tuk-tuk thành `motorcycle`. |
 | `ignore_region` | Vùng không gán từng vật. | Vùng nhỏ hoặc dày đặc của đối tượng mục tiêu không thể tách box ổn định. | Không dùng cho nền trống, vật ngoài taxonomy hoặc đối tượng lớn có thể gán riêng. Không gán thuộc tính cho lớp này. |
 
 ### Thuộc tính
@@ -38,7 +40,7 @@ Nhãn dùng để huấn luyện mô hình phát hiện **người và phương 
 
 ## 3. Quy tắc vẽ box
 
-1. Gán box cho mọi đối tượng thuộc `car`, `truck`, `van`, `motorcycle`, `person` trong ảnh. Với đối tượng là xe (`car`, `truck`, `van`, `motorcycle` không vẽ box bao phần gương).
+1. Gán box cho mọi đối tượng thuộc `car`, `truck`, `van`, `motorcycle`, `person`, `bus`, `tuk_tuk` trong ảnh. Với đối tượng là xe (`car`, `truck`, `van`, `motorcycle`, `bus`, `tuk_tuk`), không vẽ box bao phần gương.
 2. Box ôm sát vật. Box không ôm bóng đổ, khoảng trống, người/xe kế bên hay vật đang chở.
 2. Trong trường hợp vật gán nhãn bị che: Chỉ gán nếu đối tượng không bị che quá 80%, vẫn có thể xác định lớp và cao ít nhất 20 px. Box ôm phần nhìn thấy; đặt `occluded_level` theo tỷ lệ ước lượng.
 3. Đối tượng bị cắt mép: gán phần nhìn thấy, box chạm mép ảnh và `truncated=yes`.
@@ -57,7 +59,8 @@ Nhãn dùng để huấn luyện mô hình phát hiện **người và phương 
 | img_002 | Xe tải chở nhiều ô tô | R6 | `truck` cho xe chở và `car` cho mỗi xe nhìn được | Xe chở và hàng xe là các đối tượng riêng. |
 | img_003, img_010 | Người hoặc xe máy quá đông và che khuất nhau | R2, R5, R7 | Tách và gán nhãn một vài người và xe nhận diện được; vùng quá dày/nhỏ phía sau dùng `ignore_region`. | Tránh suy diễn phần bị che. |
 | img_014, img_031 | Chuyển động nhòe/ánh sáng yếu | R2, R4, R13 | Gán khi vẫn nhận diện được đối tượng và box hợp lý; đặt `can_review` nếu lớp hoặc ranh giới không chắc. | Nhòe không tự động biến vật thành vùng ignore. |
-
+| img_009, img_037 | Xe buýt trong cảnh giao thông | R1 | Gán xe buýt là `bus`; không gán nhầm thành `van` hoặc `truck`. | Loại xe được xác định theo chức năng chở hành khách và cấu tạo nhìn thấy. |
+| img_004, img_016, img_035 | Tuk-tuk ba bánh | R1 | Gán tuk-tuk là `tuk_tuk`, tách với người thật nhìn thấy; không gán thành `motorcycle`. | Xe cơ giới ba bánh có lớp riêng. |
 **Rule IDs:** R1 taxonomy/phân loại; R2 vật bị che/nhỏ; R3 cắt mép; R4 box phần nhìn thấy và chất lượng ảnh; R5 cụm đông; R6 xe chở xe; R7 người và xe; R9 vật thể giả/ảnh phản chiếu; R10 xe chủ; R11 đồ chơi/trưng bày; R12 ngoài taxonomy; R13 `can_review`.
 
 ## 5. QC và phiên bản
@@ -66,6 +69,8 @@ Nhãn dùng để huấn luyện mô hình phát hiện **người và phương 
 |---|---|---|
 | v0 | | |
 |    | | |
+
+
 
 
 
