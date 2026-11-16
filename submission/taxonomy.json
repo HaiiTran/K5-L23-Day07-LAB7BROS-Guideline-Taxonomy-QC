@@ -12,11 +12,11 @@
     },
     {
       "name": "van",
-      "definition": "Xe thùng kín cỡ nhỏ."
+      "definition": "Xe thân kín cỡ nhỏ hoặc trung, khoang lái và khoang sau liền khối, dùng chở người hoặc hàng nhẹ."
     },
     {
       "name": "motorcycle",
-      "definition": "Xe máy, mô tô."
+      "definition": "Xe gắn máy hoặc mô tô cơ giới hai bánh."
     },
     {
       "name": "person",
@@ -24,15 +24,15 @@
     },
     {
       "name": "bus",
-      "definition": "Xe buýt chở hành khách."
+      "definition": "Xe khách/xe buýt cỡ trung hoặc lớn, từ 16 chỗ trở lên, thiết kế chở khách công cộng hoặc du lịch với khoang hành khách dài liền khối."
     },
     {
       "name": "tuk_tuk",
-      "definition": "Xe cơ giới ba bánh kiểu tuk-tuk, chở người hoặc hàng."
+      "definition": "Xe cơ giới ba bánh kiểu tuk-tuk, dùng chở người hoặc hàng."
     },
     {
       "name": "ignore_region",
-      "definition": "Vùng bỏ qua (không phải vật): nơi không gán từng vật, bỏ sót ở đây không tính là lỗi."
+      "definition": "Vùng không gán từng đối tượng riêng; chỉ dùng cho cụm mục tiêu nhỏ hoặc dày không thể tách ổn định."
     }
   ],
   "attributes": [

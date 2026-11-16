@@ -60,6 +60,7 @@ Nhãn dùng để huấn luyện mô hình phát hiện **người và phương 
 | img_003, img_010 | Người hoặc xe máy quá đông và che khuất nhau | R2, R5, R7 | Tách và gán nhãn một vài người và xe nhận diện được; vùng quá dày/nhỏ phía sau dùng `ignore_region`. | Tránh suy diễn phần bị che. |
 | img_014, img_031 | Chuyển động nhòe/ánh sáng yếu | R2, R4, R13 | Gán khi vẫn nhận diện được đối tượng và box hợp lý; đặt `can_review` nếu lớp hoặc ranh giới không chắc. | Nhòe không tự động biến vật thành vùng ignore. |
 | img_035 | Xe tuk-tuk chở chồng bao tải chất cao gấp đôi thân xe. | R2 | Vẽ box chỉ ôm phần khung thân xe màu vàng (từ bánh xe tới nóc cabin), **không** kéo box bao trùm đống bao tải trên nóc. | Hàng hóa rời chất cao làm biến dạng tỷ lệ hình học của xe; rất dễ gây lệch IoU nếu hai người không thống nhất biên trên của box. |
+| img_007 | Xe bán tải có thùng hàng lớn đằng sau | R1 | Sử dụng `truck` | Vì nền pickup truck đã được cải tiến thêm thùng tải đằng sau. |
 
 **Rule IDs:** R1 taxonomy/phân loại; R2 vật bị che/nhỏ; R3 cắt mép; R4 box phần nhìn thấy và chất lượng ảnh; R5 cụm đông; R6 xe chở xe; R7 người và xe; R9 vật thể giả/ảnh phản chiếu; R10 xe chủ; R11 đồ chơi/trưng bày; R12 ngoài taxonomy; R13 `can_review`.
 
