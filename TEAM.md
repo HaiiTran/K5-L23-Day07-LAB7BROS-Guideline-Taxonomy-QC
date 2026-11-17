@@ -4,7 +4,7 @@
 - Mã thành viên (ba chữ số): 151, 137, 170
 - Người điều phối: 151
 - Người review bản cuối: 151
-- Commit chốt bài (điền ở kênh nộp sau khi commit):
+- Commit chốt bài (điền ở kênh nộp sau khi commit): 48af7b2
 
 ## Kết quả tóm tắt (điền cuối bài)
 
