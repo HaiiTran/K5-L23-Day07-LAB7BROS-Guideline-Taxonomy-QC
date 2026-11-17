@@ -1,0 +1,4 @@
+{
+  "kind": "semantic",
+  "summary": "Calibration v1.1 làm rõ pickup có thùng hàng phía sau, kể cả nắp thùng/camper cap, được gán truck; thân/vỏ xe đặt trên nóc phương tiện khác để trưng bày như img_024 không gán riêng. Phạm vi ảnh hưởng được mở rộng kiểm tra toàn bộ 40 ảnh; taxonomy v1.1 giữ nguyên danh sách lớp và thuộc tính, chỉ làm rõ định nghĩa car/truck."
+}

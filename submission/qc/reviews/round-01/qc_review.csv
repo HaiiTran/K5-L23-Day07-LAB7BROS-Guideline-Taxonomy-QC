@@ -1,0 +1,43 @@
+image,object_id,error_type,reviewer,rule_id,region,note
+img_001.jpg,4,sai_lop,151,R-01,box #4,Box #4 gán car nhưng vùng chứa pickup ở bên phải; theo taxonomy v1.1 phải là truck.
+img_001.jpg,4,sai_vi_tri_kich_thuoc,151,R-02,box #4,"cần ôm riêng pickup, không bao người/vùng trống."
+img_002.jpg,,khong,151,,,
+img_003.jpg,17,sai_vi_tri_kich_thuoc,151,"R-02, R-06",box #17,Box motorcycle bao gồm phần lớn người lái; cần tách box person và motorcycle.
+img_004.jpg,,khong,151,,,
+img_005.jpg,,khong,151,,,
+img_006.jpg,,khong,151,,,
+img_007.jpg,,khong,151,,,
+img_008.jpg,,khong,151,,,
+img_009.jpg,,khong,151,,,
+img_010.jpg,97,sai_vi_tri_kich_thuoc,151,"R-02, R-06",box #97,"Box person quá rộng, kéo xuống qua xe máy; cần ôm phần người nhìn thấy."
+img_010.jpg,98,thua,151,R-01,box #98,Box motorcycle chồng/trùng xe máy đã có box #102; xác nhận và bỏ box trùng.
+img_011.jpg,,khong,151,,,
+img_012.jpg,116,sai_lop,170,R-01,box #116,Xe pickup có thùng hàng bị gán car; theo taxonomy v1.1 phân lớp truck.
+img_013.jpg,,khong,170,,,
+img_014.jpg,,khong,170,,,
+img_015.jpg,,khong,170,,,
+img_016.jpg,,khong,170,,,
+img_017.jpg,,khong,170,,,
+img_018.jpg,,khong,170,,,
+img_019.jpg,,khong,170,,,
+img_020.jpg,,khong,170,,,
+img_022.jpg,,khong,170,,,
+img_021.jpg,,khong,170,,,
+img_023.jpg,,khong,170,,,
+img_024.jpg,,khong,170,,,
+img_025.jpg,,khong,137,,,
+img_026.jpg,,khong,137,,,
+img_027.jpg,,khong,137,,,
+img_028.jpg,233,sai_lop,137,R-01,box #233,Pickup có thùng hàng bị gán car; taxonomy v1.1 yêu cầu truck.
+img_029.jpg,,khong,137,,,
+img_030.jpg,,khong,137,,,
+img_031.jpg,,khong,137,,,
+img_032.jpg,,khong,137,,,
+img_033.jpg,,khong,137,,,
+img_034.jpg,,khong,137,,,
+img_035.jpg,,khong,137,,,
+img_036.jpg,,khong,137,,,
+img_037.jpg,,khong,137,,,
+img_038.jpg,,khong,137,,,
+img_039.jpg,,khong,137,,,
+img_040.jpg,358,sai_lop,137,R-01,box #358,Box motorcycle nằm trên phần đầu xe taxi màu xanh và chồng box car #354; sửa lớp/đối tượng theo ảnh.
