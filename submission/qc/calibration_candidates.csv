@@ -1,0 +1,356 @@
+case_id,image,issue_type,annotators,class_a,class_b,box_a,box_b,iou,ghi_chu_tu_dong
+C001,img_001.jpg,bo_sot_thua,137|151,,person,,"[221,88,103,208]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C002,img_001.jpg,bo_sot_thua,137|151,,person,,"[523,114,123,197]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C003,img_001.jpg,bo_sot_thua,137|151,,person,,"[322,128,109,201]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C004,img_001.jpg,iou_thap,137|151,person,person,"[378,112,150,206]","[396,114,133,198]",0.84,IoU 0.84 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C005,img_001.jpg,iou_thap,137|151,person,person,"[126,108,101,296]","[113,109,116,328]",0.78,IoU 0.78 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C006,img_001.jpg,iou_thap,137|151,person,person,"[88,99,140,332]","[84,95,129,379]",0.76,IoU 0.76 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C007,img_001.jpg,sai_lop,137|151,truck,car,"[226,99,734,540]","[227,112,733,528]",0.97,"137 gán truck, 151 gán car cho cùng một vật"
+C008,img_001.jpg,sai_thuoc_tinh,137|151,person,person,"[234,198,148,441]","[232,198,155,442]",0.95,occluded_level: 137=1 vs 151=0; truncated: 137=yes vs 151=no
+C009,img_001.jpg,sai_thuoc_tinh,137|151,person,person,"[378,112,150,206]","[396,114,133,198]",0.84,occluded_level: 137=2 vs 151=1
+C010,img_001.jpg,sai_thuoc_tinh,137|151,person,person,"[126,108,101,296]","[113,109,116,328]",0.78,occluded_level: 137=2 vs 151=1
+C011,img_001.jpg,sai_thuoc_tinh,137|151,person,person,"[88,99,140,332]","[84,95,129,379]",0.76,occluded_level: 137=2 vs 151=0
+C012,img_002.jpg,bo_sot_thua,151|170,,car,,"[671,150,159,99]",,Chỉ 170 vẽ car này. 151 bỏ sót hoặc 170 vẽ thừa.
+C013,img_002.jpg,bo_sot_thua,151|170,,car,,"[767,171,127,96]",,Chỉ 170 vẽ car này. 151 bỏ sót hoặc 170 vẽ thừa.
+C014,img_002.jpg,bo_sot_thua,151|170,,car,,"[448,89,188,129]",,Chỉ 170 vẽ car này. 151 bỏ sót hoặc 170 vẽ thừa.
+C015,img_002.jpg,bo_sot_thua,151|170,,car,,"[660,270,160,126]",,Chỉ 170 vẽ car này. 151 bỏ sót hoặc 170 vẽ thừa.
+C016,img_002.jpg,bo_sot_thua,151|170,,car,,"[550,246,182,135]",,Chỉ 170 vẽ car này. 151 bỏ sót hoặc 170 vẽ thừa.
+C017,img_002.jpg,bo_sot_thua,151|170,,car,,"[418,248,179,145]",,Chỉ 170 vẽ car này. 151 bỏ sót hoặc 170 vẽ thừa.
+C018,img_002.jpg,bo_sot_thua,151|170,,car,,"[152,49,359,165]",,Chỉ 170 vẽ car này. 151 bỏ sót hoặc 170 vẽ thừa.
+C019,img_002.jpg,bo_sot_thua,151|170,,car,,"[573,120,165,103]",,Chỉ 170 vẽ car này. 151 bỏ sót hoặc 170 vẽ thừa.
+C020,img_002.jpg,iou_thap,151|170,person,person,"[857,314,39,111]","[854,314,37,114]",0.80,IoU 0.80 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C021,img_002.jpg,iou_thap,151|170,car,truck,"[135,136,788,403]","[135,217,743,322]",0.75,IoU 0.75 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C022,img_002.jpg,sai_lop,151|170,car,truck,"[135,136,788,403]","[135,217,743,322]",0.75,"151 gán car, 170 gán truck cho cùng một vật"
+C023,img_003.jpg,bat_dong_ignore,137|170,,,,"[359,10,87,70]",,Vùng ignore không ghép được với vùng của người kia.
+C024,img_003.jpg,bo_sot_thua,137|170,motorcycle,,"[739,42,82,130]",,,Chỉ 137 vẽ motorcycle này. 170 bỏ sót hoặc 137 vẽ thừa.
+C025,img_003.jpg,bo_sot_thua,137|170,,person,,"[0,154,77,126]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C026,img_003.jpg,bo_sot_thua,137|170,,person,,"[38,55,67,187]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C027,img_003.jpg,bo_sot_thua,137|170,,motorcycle,,"[0,269,190,230]",,Chỉ 170 vẽ motorcycle này. 137 bỏ sót hoặc 170 vẽ thừa.
+C028,img_003.jpg,bo_sot_thua,137|170,,motorcycle,,"[809,0,90,106]",,Chỉ 170 vẽ motorcycle này. 137 bỏ sót hoặc 170 vẽ thừa.
+C029,img_003.jpg,bo_sot_thua,137|170,,motorcycle,,"[681,14,141,158]",,Chỉ 170 vẽ motorcycle này. 137 bỏ sót hoặc 170 vẽ thừa.
+C030,img_003.jpg,bo_sot_thua,137|170,,motorcycle,,"[448,39,46,66]",,Chỉ 170 vẽ motorcycle này. 137 bỏ sót hoặc 170 vẽ thừa.
+C031,img_003.jpg,bo_sot_thua,137|170,,person,,"[451,15,40,82]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C032,img_003.jpg,bo_sot_thua,137|170,,person,,"[446,13,25,80]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C033,img_003.jpg,bo_sot_thua,137|170,,car,,"[238,41,50,39]",,Chỉ 170 vẽ car này. 137 bỏ sót hoặc 170 vẽ thừa.
+C034,img_003.jpg,bo_sot_thua,137|170,,motorcycle,,"[477,174,170,193]",,Chỉ 170 vẽ motorcycle này. 137 bỏ sót hoặc 170 vẽ thừa.
+C035,img_003.jpg,bo_sot_thua,137|170,,motorcycle,,"[917,44,43,70]",,Chỉ 170 vẽ motorcycle này. 137 bỏ sót hoặc 170 vẽ thừa.
+C036,img_003.jpg,bo_sot_thua,137|170,,motorcycle,,"[871,15,89,95]",,Chỉ 170 vẽ motorcycle này. 137 bỏ sót hoặc 170 vẽ thừa.
+C037,img_003.jpg,bo_sot_thua,137|170,,motorcycle,,"[843,10,92,102]",,Chỉ 170 vẽ motorcycle này. 137 bỏ sót hoặc 170 vẽ thừa.
+C038,img_003.jpg,iou_thap,137|170,person,person,"[466,36,90,173]","[467,21,107,208]",0.69,IoU 0.69 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C039,img_003.jpg,iou_thap,137|170,person,person,"[493,1,213,394]","[513,0,189,543]",0.66,IoU 0.66 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C040,img_003.jpg,iou_thap,137|170,person,person,"[682,7,103,240]","[660,13,106,282]",0.56,IoU 0.56 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C041,img_003.jpg,iou_thap,137|170,person,person,"[236,64,129,134]","[213,61,150,220]",0.52,IoU 0.52 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C042,img_003.jpg,sai_thuoc_tinh,137|170,person,person,"[98,3,213,572]","[98,0,214,578]",0.98,occluded_level: 137=1 vs 170=0
+C043,img_003.jpg,sai_thuoc_tinh,137|170,motorcycle,motorcycle,"[249,123,168,287]","[244,121,174,292]",0.94,occluded_level: 137=1 vs 170=2
+C044,img_003.jpg,sai_thuoc_tinh,137|170,car,car,"[276,35,81,53]","[276,37,80,54]",0.90,occluded_level: 137=1 vs 170=2
+C045,img_003.jpg,sai_thuoc_tinh,137|170,person,person,"[682,7,103,240]","[660,13,106,282]",0.56,occluded_level: 137=1 vs 170=2
+C046,img_004.jpg,bat_dong_ignore,151|170,,,,"[77,81,799,523]",,Vùng ignore không ghép được với vùng của người kia.
+C047,img_004.jpg,bat_dong_ignore,151|170,person,,"[584,151,83,199]",,,Chỉ vùng ignore của 170 phủ box của 151.
+C048,img_004.jpg,bat_dong_ignore,151|170,tuk_tuk,,"[70,81,419,507]",,,Chỉ vùng ignore của 170 phủ box của 151.
+C049,img_004.jpg,bat_dong_ignore,151|170,person,,"[178,125,160,304]",,,Chỉ vùng ignore của 170 phủ box của 151.
+C050,img_004.jpg,bat_dong_ignore,151|170,tuk_tuk,,"[434,106,420,343]",,,Chỉ vùng ignore của 170 phủ box của 151.
+C051,img_005.jpg,bo_sot_thua,137|151,person,,"[428,30,222,610]",,,Chỉ 137 vẽ person này. 151 bỏ sót hoặc 137 vẽ thừa.
+C052,img_005.jpg,bo_sot_thua,137|151,,car,,"[0,116,303,172]",,Chỉ 151 vẽ car này. 137 bỏ sót hoặc 151 vẽ thừa.
+C053,img_005.jpg,bo_sot_thua,137|151,,car,,"[0,75,81,104]",,Chỉ 151 vẽ car này. 137 bỏ sót hoặc 151 vẽ thừa.
+C054,img_005.jpg,bo_sot_thua,137|151,,person,,"[898,101,45,79]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C055,img_005.jpg,bo_sot_thua,137|151,,person,,"[427,28,455,612]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C056,img_005.jpg,sai_thuoc_tinh,137|151,motorcycle,motorcycle,"[2,300,208,321]","[0,294,213,346]",0.91,occluded_level: 137=1 vs 151=3
+C057,img_005.jpg,sai_thuoc_tinh,137|151,van,van,"[70,27,890,365]","[69,26,891,328]",0.90,occluded_level: 137=2 vs 151=1
+C058,img_005.jpg,sai_thuoc_tinh,137|151,person,person,"[319,119,251,486]","[303,115,271,525]",0.86,occluded_level: 137=3 vs 151=2; truncated: 137=yes vs 151=no
+C059,img_006.jpg,bo_sot_thua,137|170,,motorcycle,,"[389,185,148,120]",,Chỉ 170 vẽ motorcycle này. 137 bỏ sót hoặc 170 vẽ thừa.
+C060,img_006.jpg,bo_sot_thua,137|170,,person,,"[910,97,50,314]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C061,img_006.jpg,bo_sot_thua,137|170,,person,,"[517,139,65,165]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C062,img_006.jpg,bo_sot_thua,137|170,,person,,"[423,143,74,147]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C063,img_006.jpg,bo_sot_thua,137|170,,person,,"[648,138,84,161]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C064,img_006.jpg,bo_sot_thua,137|170,,person,,"[724,167,51,96]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C065,img_006.jpg,bo_sot_thua,137|170,,person,,"[882,157,78,174]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C066,img_006.jpg,iou_thap,137|170,motorcycle,motorcycle,"[89,215,198,275]","[90,175,204,314]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C067,img_006.jpg,iou_thap,137|170,motorcycle,motorcycle,"[575,235,166,235]","[587,198,155,274]",0.80,IoU 0.80 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C068,img_006.jpg,iou_thap,137|170,car,car,"[0,125,122,230]","[0,145,143,217]",0.77,IoU 0.77 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C069,img_006.jpg,iou_thap,137|170,person,person,"[169,96,111,285]","[124,95,156,302]",0.67,IoU 0.67 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C070,img_006.jpg,sai_thuoc_tinh,137|170,person,person,"[731,75,182,457]","[730,73,182,460]",0.99,occluded_level: 137=0 vs 170=1
+C071,img_006.jpg,sai_thuoc_tinh,137|170,person,person,"[571,125,150,322]","[570,124,152,322]",0.98,occluded_level: 137=1 vs 170=0
+C072,img_006.jpg,sai_thuoc_tinh,137|170,person,person,"[336,94,133,307]","[335,92,134,305]",0.98,occluded_level: 137=1 vs 170=2
+C073,img_006.jpg,sai_thuoc_tinh,137|170,person,person,"[102,92,164,303]","[105,91,161,304]",0.97,occluded_level: 137=1 vs 170=0
+C074,img_006.jpg,sai_thuoc_tinh,137|170,motorcycle,motorcycle,"[326,219,163,264]","[322,205,165,277]",0.92,occluded_level: 137=0 vs 170=1
+C075,img_006.jpg,sai_thuoc_tinh,137|170,motorcycle,motorcycle,"[575,235,166,235]","[587,198,155,274]",0.80,occluded_level: 137=0 vs 170=1
+C076,img_006.jpg,sai_thuoc_tinh,137|170,car,car,"[0,125,122,230]","[0,145,143,217]",0.77,occluded_level: 137=0 vs 170=3; truncated: 137=no vs 170=yes
+C077,img_006.jpg,sai_thuoc_tinh,137|170,person,person,"[169,96,111,285]","[124,95,156,302]",0.67,occluded_level: 137=1 vs 170=2
+C078,img_007.jpg,co_can_review,170,car,,"[385,245,249,164]",,,"170 gắn cờ can_review (ca mơ hồ, cần chốt quy tắc)"
+C079,img_007.jpg,iou_thap,151|170,truck,car,"[384,130,261,278]","[385,245,249,164]",0.56,IoU 0.56 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C080,img_007.jpg,sai_lop,151|170,truck,car,"[384,130,261,278]","[385,245,249,164]",0.56,"151 gán truck, 170 gán car cho cùng một vật"
+C081,img_007.jpg,sai_thuoc_tinh,151|170,truck,truck,"[659,53,301,396]","[642,57,318,383]",0.91,truncated: 151=no vs 170=yes
+C082,img_007.jpg,sai_thuoc_tinh,151|170,truck,car,"[384,130,261,278]","[385,245,249,164]",0.56,occluded_level: 151=0 vs 170=1
+C083,img_008.jpg,bat_dong_ignore,137|151,,,,"[822,218,63,52]",,Vùng ignore không ghép được với vùng của người kia.
+C084,img_008.jpg,bat_dong_ignore,137|151,,,,"[333,181,122,50]",,Vùng ignore không ghép được với vùng của người kia.
+C085,img_008.jpg,bat_dong_ignore,137|151,,,,"[193,191,42,55]",,Vùng ignore không ghép được với vùng của người kia.
+C086,img_008.jpg,bat_dong_ignore,137|151,,person,,"[411,191,41,68]",,Chỉ vùng ignore của 151 phủ box của 151.
+C087,img_008.jpg,bo_sot_thua,137|151,motorcycle,,"[224,387,160,253]",,,Chỉ 137 vẽ motorcycle này. 151 bỏ sót hoặc 137 vẽ thừa.
+C088,img_008.jpg,bo_sot_thua,137|151,motorcycle,,"[566,308,393,331]",,,Chỉ 137 vẽ motorcycle này. 151 bỏ sót hoặc 137 vẽ thừa.
+C089,img_008.jpg,bo_sot_thua,137|151,,person,,"[928,208,23,85]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C090,img_008.jpg,bo_sot_thua,137|151,,motorcycle,,"[0,220,135,196]",,Chỉ 151 vẽ motorcycle này. 137 bỏ sót hoặc 151 vẽ thừa.
+C091,img_008.jpg,bo_sot_thua,137|151,,motorcycle,,"[41,251,342,389]",,Chỉ 151 vẽ motorcycle này. 137 bỏ sót hoặc 151 vẽ thừa.
+C092,img_008.jpg,bo_sot_thua,137|151,,person,,"[668,202,63,94]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C093,img_008.jpg,bo_sot_thua,137|151,,motorcycle,,"[678,242,43,74]",,Chỉ 151 vẽ motorcycle này. 137 bỏ sót hoặc 151 vẽ thừa.
+C094,img_008.jpg,bo_sot_thua,137|151,,motorcycle,,"[856,232,78,52]",,Chỉ 151 vẽ motorcycle này. 137 bỏ sót hoặc 151 vẽ thừa.
+C095,img_008.jpg,bo_sot_thua,137|151,,truck,,"[593,176,49,66]",,Chỉ 151 vẽ truck này. 137 bỏ sót hoặc 151 vẽ thừa.
+C096,img_008.jpg,bo_sot_thua,137|151,,person,,"[582,204,16,53]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C097,img_008.jpg,bo_sot_thua,137|151,,person,,"[544,196,34,58]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C098,img_008.jpg,bo_sot_thua,137|151,,motorcycle,,"[539,251,50,85]",,Chỉ 151 vẽ motorcycle này. 137 bỏ sót hoặc 151 vẽ thừa.
+C099,img_008.jpg,bo_sot_thua,137|151,,person,,"[494,192,48,64]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C100,img_008.jpg,bo_sot_thua,137|151,,person,,"[456,200,40,66]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C101,img_008.jpg,iou_thap,137|151,motorcycle,motorcycle,"[302,278,212,215]","[308,270,228,222]",0.85,IoU 0.85 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C102,img_008.jpg,iou_thap,137|151,car,car,"[629,201,102,85]","[629,199,122,85]",0.80,IoU 0.80 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C103,img_008.jpg,sai_thuoc_tinh,137|151,person,person,"[608,152,248,488]","[606,150,249,490]",0.99,occluded_level: 137=1 vs 151=0; truncated: 137=yes vs 151=no
+C104,img_008.jpg,sai_thuoc_tinh,137|151,person,person,"[198,181,119,222]","[196,181,121,221]",0.98,occluded_level: 137=1 vs 151=2
+C105,img_008.jpg,sai_thuoc_tinh,137|151,motorcycle,motorcycle,"[306,359,145,198]","[307,359,147,202]",0.96,occluded_level: 137=0 vs 151=3
+C106,img_008.jpg,sai_thuoc_tinh,137|151,motorcycle,motorcycle,"[391,236,165,121]","[388,238,167,117]",0.95,occluded_level: 137=0 vs 151=2
+C107,img_008.jpg,sai_thuoc_tinh,137|151,car,car,"[629,201,102,85]","[629,199,122,85]",0.80,occluded_level: 137=2 vs 151=1
+C108,img_009.jpg,bo_sot_thua,137|170,bus,,"[357,369,310,124]",,,Chỉ 137 vẽ bus này. 170 bỏ sót hoặc 137 vẽ thừa.
+C109,img_009.jpg,bo_sot_thua,137|170,,motorcycle,,"[691,433,21,38]",,Chỉ 170 vẽ motorcycle này. 137 bỏ sót hoặc 170 vẽ thừa.
+C110,img_009.jpg,bo_sot_thua,137|170,,motorcycle,,"[709,437,68,42]",,Chỉ 170 vẽ motorcycle này. 137 bỏ sót hoặc 170 vẽ thừa.
+C111,img_009.jpg,bo_sot_thua,137|170,,person,,"[157,422,20,53]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C112,img_009.jpg,bo_sot_thua,137|170,,person,,"[212,304,18,40]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C113,img_009.jpg,bo_sot_thua,137|170,,motorcycle,,"[861,428,47,81]",,Chỉ 170 vẽ motorcycle này. 137 bỏ sót hoặc 170 vẽ thừa.
+C114,img_009.jpg,bo_sot_thua,137|170,,person,,"[311,431,19,42]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C115,img_009.jpg,bo_sot_thua,137|170,,motorcycle,,"[778,433,17,39]",,Chỉ 170 vẽ motorcycle này. 137 bỏ sót hoặc 170 vẽ thừa.
+C116,img_009.jpg,sai_thuoc_tinh,137|170,motorcycle,motorcycle,"[810,433,149,105]","[815,426,145,114]",0.89,truncated: 137=no vs 170=yes
+C117,img_010.jpg,sai_thuoc_tinh,137|151,motorcycle,motorcycle,"[620,234,268,389]","[620,234,267,389]",0.99,occluded_level: 137=1 vs 151=0
+C118,img_010.jpg,sai_thuoc_tinh,137|151,person,person,"[135,84,239,424]","[134,87,241,425]",0.97,occluded_level: 137=1 vs 151=3
+C119,img_010.jpg,sai_thuoc_tinh,137|151,person,person,"[312,113,114,375]","[310,112,118,386]",0.95,occluded_level: 137=0 vs 151=1
+C120,img_010.jpg,sai_thuoc_tinh,137|151,motorcycle,motorcycle,"[584,189,372,262]","[598,187,362,265]",0.94,truncated: 137=yes vs 151=no
+C121,img_010.jpg,sai_thuoc_tinh,137|151,motorcycle,motorcycle,"[159,310,152,218]","[162,307,148,231]",0.92,occluded_level: 137=0 vs 151=3
+C122,img_011.jpg,bo_sot_thua,137|170,,van,,"[516,325,216,88]",,Chỉ 170 vẽ van này. 137 bỏ sót hoặc 170 vẽ thừa.
+C123,img_011.jpg,bo_sot_thua,137|170,,person,,"[265,339,17,53]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C124,img_011.jpg,bo_sot_thua,137|170,,person,,"[356,343,24,68]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C125,img_011.jpg,bo_sot_thua,137|170,,person,,"[172,341,20,63]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C126,img_011.jpg,bo_sot_thua,137|170,,person,,"[196,340,24,65]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C127,img_011.jpg,bo_sot_thua,137|170,,person,,"[305,338,18,49]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C128,img_011.jpg,bo_sot_thua,137|170,,person,,"[38,345,19,60]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C129,img_011.jpg,bo_sot_thua,137|170,,person,,"[31,350,17,55]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C130,img_011.jpg,bo_sot_thua,137|170,,person,,"[446,333,22,48]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C131,img_011.jpg,bo_sot_thua,137|170,,person,,"[420,330,16,45]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C132,img_011.jpg,iou_thap,137|170,person,person,"[49,366,60,116]","[49,367,57,134]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C133,img_011.jpg,iou_thap,137|170,person,person,"[101,354,59,117]","[100,353,60,149]",0.77,IoU 0.77 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C134,img_011.jpg,sai_thuoc_tinh,137|170,person,person,"[49,366,60,116]","[49,367,57,134]",0.83,occluded_level: 137=1 vs 170=2
+C135,img_011.jpg,sai_thuoc_tinh,137|170,person,person,"[101,354,59,117]","[100,353,60,149]",0.77,occluded_level: 137=1 vs 170=2
+C136,img_012.jpg,bo_sot_thua,151|170,truck,,"[137,261,78,38]",,,Chỉ 151 vẽ truck này. 170 bỏ sót hoặc 151 vẽ thừa.
+C137,img_012.jpg,sai_lop,151|170,car,truck,"[289,245,671,395]","[290,250,670,390]",0.98,"151 gán car, 170 gán truck cho cùng một vật"
+C138,img_012.jpg,sai_thuoc_tinh,151|170,truck,truck,"[330,206,153,198]","[329,208,152,198]",0.97,occluded_level: 151=0 vs 170=2
+C139,img_012.jpg,sai_thuoc_tinh,151|170,car,car,"[296,294,37,31]","[296,295,40,30]",0.89,occluded_level: 151=3 vs 170=2
+C140,img_013.jpg,bat_dong_ignore,137|151,,,,"[203,412,64,30]",,Vùng ignore không ghép được với vùng của người kia.
+C141,img_013.jpg,bat_dong_ignore,137|151,,car,,"[239,421,45,22]",,Chỉ vùng ignore của 151 phủ box của 151.
+C142,img_013.jpg,bo_sot_thua,137|151,,motorcycle,,"[253,440,53,43]",,Chỉ 151 vẽ motorcycle này. 137 bỏ sót hoặc 151 vẽ thừa.
+C143,img_013.jpg,bo_sot_thua,137|151,,car,,"[160,422,38,28]",,Chỉ 151 vẽ car này. 137 bỏ sót hoặc 151 vẽ thừa.
+C144,img_013.jpg,bo_sot_thua,137|151,,car,,"[259,418,64,27]",,Chỉ 151 vẽ car này. 137 bỏ sót hoặc 151 vẽ thừa.
+C145,img_013.jpg,bo_sot_thua,137|151,,car,,"[298,417,54,28]",,Chỉ 151 vẽ car này. 137 bỏ sót hoặc 151 vẽ thừa.
+C146,img_013.jpg,iou_thap,137|151,person,person,"[348,422,27,81]","[347,422,32,80]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C147,img_015.jpg,bo_sot_thua,137|170,,car,,"[0,118,57,72]",,Chỉ 170 vẽ car này. 137 bỏ sót hoặc 170 vẽ thừa.
+C148,img_015.jpg,iou_thap,137|170,car,car,"[433,122,168,79]","[419,121,182,87]",0.85,IoU 0.85 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C149,img_015.jpg,sai_thuoc_tinh,137|170,car,car,"[770,54,190,384]","[768,58,192,390]",0.96,occluded_level: 137=3 vs 170=0
+C150,img_015.jpg,sai_thuoc_tinh,137|170,car,car,"[229,114,169,93]","[229,115,173,92]",0.96,occluded_level: 137=1 vs 170=2
+C151,img_015.jpg,sai_thuoc_tinh,137|170,car,car,"[1,174,277,381]","[0,168,272,410]",0.91,occluded_level: 137=3 vs 170=0
+C152,img_015.jpg,sai_thuoc_tinh,137|170,car,car,"[60,124,158,82]","[55,125,165,86]",0.90,occluded_level: 137=1 vs 170=2
+C153,img_015.jpg,sai_thuoc_tinh,137|170,car,car,"[433,122,168,79]","[419,121,182,87]",0.85,occluded_level: 137=1 vs 170=2
+C154,img_016.jpg,bo_sot_thua,137|170,tuk_tuk,,"[648,322,311,355]",,,Chỉ 137 vẽ tuk_tuk này. 170 bỏ sót hoặc 137 vẽ thừa.
+C155,img_016.jpg,bo_sot_thua,137|170,tuk_tuk,,"[0,307,199,355]",,,Chỉ 137 vẽ tuk_tuk này. 170 bỏ sót hoặc 137 vẽ thừa.
+C156,img_016.jpg,bo_sot_thua,137|170,,person,,"[0,354,134,154]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C157,img_016.jpg,bo_sot_thua,137|170,,car,,"[420,305,189,122]",,Chỉ 170 vẽ car này. 137 bỏ sót hoặc 170 vẽ thừa.
+C158,img_016.jpg,sai_thuoc_tinh,137|170,person,person,"[777,442,182,278]","[776,441,184,279]",0.99,occluded_level: 137=2 vs 170=0
+C159,img_016.jpg,sai_thuoc_tinh,137|170,van,van,"[541,270,418,234]","[535,269,425,235]",0.98,occluded_level: 137=1 vs 170=2
+C160,img_016.jpg,sai_thuoc_tinh,137|170,person,person,"[411,322,99,220]","[408,322,105,225]",0.92,occluded_level: 137=1 vs 170=0
+C161,img_017.jpg,bat_dong_ignore,151|170,,,,"[144,201,401,817]",,Vùng ignore không ghép được với vùng của người kia.
+C162,img_018.jpg,sai_thuoc_tinh,137|151,car,car,"[742,544,218,121]","[739,543,221,123]",0.97,occluded_level: 137=0 vs 151=2
+C163,img_018.jpg,sai_thuoc_tinh,137|151,car,car,"[568,552,271,121]","[567,549,275,126]",0.94,occluded_level: 137=0 vs 151=1
+C164,img_018.jpg,sai_thuoc_tinh,137|151,car,car,"[387,543,221,129]","[385,542,225,135]",0.94,occluded_level: 137=0 vs 151=1
+C165,img_018.jpg,sai_thuoc_tinh,137|151,car,car,"[168,496,203,162]","[165,495,206,181]",0.88,occluded_level: 137=0 vs 151=2
+C166,img_018.jpg,sai_thuoc_tinh,137|151,car,car,"[0,530,112,125]","[0,530,114,142]",0.86,occluded_level: 137=1 vs 151=2
+C167,img_019.jpg,bat_dong_ignore,151|170,,,"[833,79,127,200]",,,Vùng ignore không ghép được với vùng của người kia.
+C168,img_019.jpg,bat_dong_ignore,151|170,,,"[0,0,477,202]",,,Vùng ignore không ghép được với vùng của người kia.
+C169,img_019.jpg,bat_dong_ignore,151|170,,,,"[112,224,773,406]",,Vùng ignore không ghép được với vùng của người kia.
+C170,img_019.jpg,bat_dong_ignore,151|170,car,,"[117,203,762,427]",,,Chỉ vùng ignore của 170 phủ box của 151.
+C171,img_019.jpg,bat_dong_ignore,151|170,person,,"[431,120,44,78]",,,Chỉ vùng ignore của 151 phủ box của 151.
+C172,img_019.jpg,bat_dong_ignore,151|170,,person,,"[167,96,79,263]",,Chỉ vùng ignore của 170 phủ box của 170.
+C173,img_019.jpg,bat_dong_ignore,151|170,,person,,"[297,147,66,175]",,Chỉ vùng ignore của 170 phủ box của 170.
+C174,img_019.jpg,bat_dong_ignore,151|170,,person,,"[432,160,46,134]",,Chỉ vùng ignore của 170 phủ box của 170.
+C175,img_019.jpg,bat_dong_ignore,151|170,,person,,"[44,78,77,230]",,Chỉ vùng ignore của 151 phủ box của 170.
+C176,img_019.jpg,bat_dong_ignore,151|170,,person,,"[104,65,65,243]",,Chỉ vùng ignore của 151 phủ box của 170.
+C177,img_019.jpg,bat_dong_ignore,151|170,,person,,"[204,70,75,198]",,Chỉ vùng ignore của 151 phủ box của 170.
+C178,img_019.jpg,bat_dong_ignore,151|170,,person,,"[122,57,65,191]",,Chỉ vùng ignore của 151 phủ box của 170.
+C179,img_019.jpg,bo_sot_thua,151|170,,person,,"[17,167,78,184]",,Chỉ 170 vẽ person này. 151 bỏ sót hoặc 170 vẽ thừa.
+C180,img_019.jpg,bo_sot_thua,151|170,,person,,"[27,110,113,281]",,Chỉ 170 vẽ person này. 151 bỏ sót hoặc 170 vẽ thừa.
+C181,img_019.jpg,bo_sot_thua,151|170,,person,,"[408,120,69,175]",,Chỉ 170 vẽ person này. 151 bỏ sót hoặc 170 vẽ thừa.
+C182,img_019.jpg,bo_sot_thua,151|170,,person,,"[0,97,10,232]",,Chỉ 170 vẽ person này. 151 bỏ sót hoặc 170 vẽ thừa.
+C183,img_019.jpg,iou_thap,151|170,person,person,"[399,157,42,128]","[397,154,47,141]",0.79,IoU 0.79 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C184,img_019.jpg,iou_thap,151|170,person,person,"[503,237,88,69]","[507,239,86,78]",0.79,IoU 0.79 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C185,img_019.jpg,iou_thap,151|170,person,person,"[454,197,58,92]","[449,195,62,109]",0.76,IoU 0.76 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C186,img_019.jpg,sai_thuoc_tinh,151|170,person,person,"[82,148,77,194]","[82,150,76,194]",0.97,occluded_level: 151=0 vs 170=1
+C187,img_019.jpg,sai_thuoc_tinh,151|170,person,person,"[129,119,102,271]","[124,120,105,273]",0.91,occluded_level: 151=0 vs 170=1
+C188,img_019.jpg,sai_thuoc_tinh,151|170,person,person,"[399,157,42,128]","[397,154,47,141]",0.79,occluded_level: 151=1 vs 170=2
+C189,img_019.jpg,sai_thuoc_tinh,151|170,person,person,"[503,237,88,69]","[507,239,86,78]",0.79,occluded_level: 151=0 vs 170=3
+C190,img_019.jpg,sai_thuoc_tinh,151|170,person,person,"[454,197,58,92]","[449,195,62,109]",0.76,occluded_level: 151=1 vs 170=2
+C191,img_020.jpg,bat_dong_ignore,137|170,,,,"[205,406,57,51]",,Vùng ignore không ghép được với vùng của người kia.
+C192,img_021.jpg,bat_dong_ignore,137|151,,,"[540,211,366,99]",,,Vùng ignore không ghép được với vùng của người kia.
+C193,img_021.jpg,bat_dong_ignore,137|151,,,,"[162,206,748,115]",,Vùng ignore không ghép được với vùng của người kia.
+C194,img_021.jpg,bat_dong_ignore,137|151,car,,"[252,239,149,64]",,,Chỉ vùng ignore của 151 phủ box của 137.
+C195,img_021.jpg,bat_dong_ignore,137|151,car,,"[416,215,135,54]",,,Chỉ vùng ignore của 151 phủ box của 137.
+C196,img_021.jpg,bat_dong_ignore,137|151,,person,,"[200,269,61,94]",,Chỉ vùng ignore của 151 phủ box của 151.
+C197,img_021.jpg,bo_sot_thua,137|151,motorcycle,,"[44,452,105,184]",,,Chỉ 137 vẽ motorcycle này. 151 bỏ sót hoặc 137 vẽ thừa.
+C198,img_021.jpg,bo_sot_thua,137|151,,motorcycle,,"[0,433,79,122]",,Chỉ 151 vẽ motorcycle này. 137 bỏ sót hoặc 151 vẽ thừa.
+C199,img_021.jpg,bo_sot_thua,137|151,,person,,"[395,270,82,178]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C200,img_021.jpg,bo_sot_thua,137|151,,person,,"[628,293,98,110]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C201,img_021.jpg,bo_sot_thua,137|151,,person,,"[82,248,72,98]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C202,img_021.jpg,bo_sot_thua,137|151,,motorcycle,,"[698,350,52,90]",,Chỉ 151 vẽ motorcycle này. 137 bỏ sót hoặc 151 vẽ thừa.
+C203,img_021.jpg,bo_sot_thua,137|151,,motorcycle,,"[798,286,51,80]",,Chỉ 151 vẽ motorcycle này. 137 bỏ sót hoặc 151 vẽ thừa.
+C204,img_021.jpg,bo_sot_thua,137|151,,person,,"[463,303,114,157]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C205,img_021.jpg,bo_sot_thua,137|151,,person,,"[502,290,85,94]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C206,img_021.jpg,bo_sot_thua,137|151,,person,,"[158,323,77,128]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C207,img_021.jpg,bo_sot_thua,137|151,,person,,"[35,260,71,127]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C208,img_021.jpg,bo_sot_thua,137|151,,person,,"[259,262,81,130]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C209,img_021.jpg,bo_sot_thua,137|151,,motorcycle,,"[0,346,139,115]",,Chỉ 151 vẽ motorcycle này. 137 bỏ sót hoặc 151 vẽ thừa.
+C210,img_021.jpg,bo_sot_thua,137|151,,motorcycle,,"[50,380,198,258]",,Chỉ 151 vẽ motorcycle này. 137 bỏ sót hoặc 151 vẽ thừa.
+C211,img_021.jpg,bo_sot_thua,137|151,,motorcycle,,"[235,418,222,178]",,Chỉ 151 vẽ motorcycle này. 137 bỏ sót hoặc 151 vẽ thừa.
+C212,img_021.jpg,bo_sot_thua,137|151,,motorcycle,,"[232,508,223,135]",,Chỉ 151 vẽ motorcycle này. 137 bỏ sót hoặc 151 vẽ thừa.
+C213,img_021.jpg,bo_sot_thua,137|151,,motorcycle,,"[67,312,91,91]",,Chỉ 151 vẽ motorcycle này. 137 bỏ sót hoặc 151 vẽ thừa.
+C214,img_021.jpg,iou_thap,137|151,car,car,"[0,226,223,137]","[0,238,219,104]",0.75,IoU 0.75 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C215,img_021.jpg,sai_thuoc_tinh,137|151,motorcycle,motorcycle,"[540,403,186,240]","[541,401,187,242]",0.97,truncated: 137=no vs 151=yes
+C216,img_021.jpg,sai_thuoc_tinh,137|151,person,person,"[130,438,280,203]","[127,436,285,207]",0.97,occluded_level: 137=2 vs 151=0
+C217,img_021.jpg,sai_thuoc_tinh,137|151,person,person,"[806,242,56,106]","[803,241,60,108]",0.91,occluded_level: 137=1 vs 151=0
+C218,img_021.jpg,sai_thuoc_tinh,137|151,person,person,"[702,259,57,141]","[698,257,59,139]",0.86,occluded_level: 137=1 vs 151=0
+C219,img_021.jpg,sai_thuoc_tinh,137|151,car,car,"[0,226,223,137]","[0,238,219,104]",0.75,truncated: 137=yes vs 151=no
+C220,img_022.jpg,bo_sot_thua,151|170,person,,"[577,466,67,65]",,,Chỉ 151 vẽ person này. 170 bỏ sót hoặc 151 vẽ thừa.
+C221,img_023.jpg,bat_dong_ignore,137|151,,,,"[393,172,102,54]",,Vùng ignore không ghép được với vùng của người kia.
+C222,img_023.jpg,bat_dong_ignore,137|151,,,,"[813,186,65,52]",,Vùng ignore không ghép được với vùng của người kia.
+C223,img_023.jpg,bo_sot_thua,137|151,,person,,"[895,199,65,126]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C224,img_023.jpg,bo_sot_thua,137|151,,person,,"[749,163,32,74]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C225,img_023.jpg,bo_sot_thua,137|151,,car,,"[790,175,34,29]",,Chỉ 151 vẽ car này. 137 bỏ sót hoặc 151 vẽ thừa.
+C226,img_023.jpg,iou_thap,137|151,person,person,"[65,126,36,144]","[49,125,51,135]",0.66,IoU 0.66 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C227,img_023.jpg,sai_thuoc_tinh,137|151,person,person,"[65,126,36,144]","[49,125,51,135]",0.66,occluded_level: 137=2 vs 151=1
+C228,img_024.jpg,bat_dong_ignore,137|170,,,,"[232,45,470,209]",,Vùng ignore không ghép được với vùng của người kia.
+C229,img_024.jpg,bo_sot_thua,137|170,,car,,"[123,206,286,149]",,Chỉ 170 vẽ car này. 137 bỏ sót hoặc 170 vẽ thừa.
+C230,img_024.jpg,bo_sot_thua,137|170,,car,,"[804,214,156,118]",,Chỉ 170 vẽ car này. 137 bỏ sót hoặc 170 vẽ thừa.
+C231,img_024.jpg,bo_sot_thua,137|170,,car,,"[0,538,186,182]",,Chỉ 170 vẽ car này. 137 bỏ sót hoặc 170 vẽ thừa.
+C232,img_025.jpg,bat_dong_ignore,137|151,,,,"[565,351,21,20]",,Vùng ignore không ghép được với vùng của người kia.
+C233,img_025.jpg,bat_dong_ignore,137|151,,,,"[506,355,30,23]",,Vùng ignore không ghép được với vùng của người kia.
+C234,img_025.jpg,bat_dong_ignore,137|151,,,,"[188,353,179,45]",,Vùng ignore không ghép được với vùng của người kia.
+C235,img_025.jpg,bo_sot_thua,137|151,,person,,"[815,354,40,72]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C236,img_025.jpg,bo_sot_thua,137|151,,motorcycle,,"[804,379,56,64]",,Chỉ 151 vẽ motorcycle này. 137 bỏ sót hoặc 151 vẽ thừa.
+C237,img_025.jpg,bo_sot_thua,137|151,,car,,"[882,340,78,79]",,Chỉ 151 vẽ car này. 137 bỏ sót hoặc 151 vẽ thừa.
+C238,img_025.jpg,bo_sot_thua,137|151,,car,,"[783,352,44,40]",,Chỉ 151 vẽ car này. 137 bỏ sót hoặc 151 vẽ thừa.
+C239,img_025.jpg,bo_sot_thua,137|151,,car,,"[686,358,26,34]",,Chỉ 151 vẽ car này. 137 bỏ sót hoặc 151 vẽ thừa.
+C240,img_025.jpg,bo_sot_thua,137|151,,car,,"[664,352,36,32]",,Chỉ 151 vẽ car này. 137 bỏ sót hoặc 151 vẽ thừa.
+C241,img_025.jpg,bo_sot_thua,137|151,,car,,"[652,354,18,23]",,Chỉ 151 vẽ car này. 137 bỏ sót hoặc 151 vẽ thừa.
+C242,img_025.jpg,bo_sot_thua,137|151,,person,,"[490,346,16,46]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C243,img_025.jpg,bo_sot_thua,137|151,,person,,"[431,359,18,37]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C244,img_025.jpg,bo_sot_thua,137|151,,person,,"[34,382,54,46]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C245,img_025.jpg,bo_sot_thua,137|151,,person,,"[151,368,22,24]",,Chỉ 151 vẽ person này. 137 bỏ sót hoặc 151 vẽ thừa.
+C246,img_025.jpg,sai_thuoc_tinh,137|151,car,car,"[738,345,70,63]","[745,347,64,60]",0.86,occluded_level: 137=1 vs 151=2
+C247,img_026.jpg,sai_thuoc_tinh,137|170,person,person,"[354,541,242,474]","[348,537,249,476]",0.96,occluded_level: 137=1 vs 170=0
+C248,img_027.jpg,bat_dong_ignore,151|170,,,,"[343,207,538,289]",,Vùng ignore không ghép được với vùng của người kia.
+C249,img_028.jpg,sai_lop,137|151,truck,car,"[28,301,902,403]","[23,297,913,407]",0.98,"137 gán truck, 151 gán car cho cùng một vật"
+C250,img_029.jpg,bo_sot_thua,151|170,person,,"[348,188,20,29]",,,Chỉ 151 vẽ person này. 170 bỏ sót hoặc 151 vẽ thừa.
+C251,img_029.jpg,bo_sot_thua,151|170,,person,,"[346,189,23,53]",,Chỉ 170 vẽ person này. 151 bỏ sót hoặc 170 vẽ thừa.
+C252,img_029.jpg,bo_sot_thua,151|170,,car,,"[249,201,35,23]",,Chỉ 170 vẽ car này. 151 bỏ sót hoặc 170 vẽ thừa.
+C253,img_029.jpg,bo_sot_thua,151|170,,motorcycle,,"[331,230,227,143]",,Chỉ 170 vẽ motorcycle này. 151 bỏ sót hoặc 170 vẽ thừa.
+C254,img_029.jpg,iou_thap,151|170,person,person,"[277,192,22,49]","[274,193,25,52]",0.78,IoU 0.78 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C255,img_029.jpg,iou_thap,151|170,person,person,"[214,183,31,72]","[217,184,27,83]",0.75,IoU 0.75 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C256,img_030.jpg,bat_dong_ignore,137|170,,,,"[0,85,960,280]",,Vùng ignore không ghép được với vùng của người kia.
+C257,img_030.jpg,iou_thap,137|170,motorcycle,motorcycle,"[351,280,564,440]","[247,274,650,446]",0.81,IoU 0.81 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C258,img_030.jpg,iou_thap,137|170,person,person,"[698,25,80,245]","[694,26,89,293]",0.75,IoU 0.75 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C259,img_030.jpg,sai_thuoc_tinh,137|170,motorcycle,motorcycle,"[502,234,458,483]","[463,236,497,484]",0.91,occluded_level: 137=0 vs 170=2
+C260,img_030.jpg,sai_thuoc_tinh,137|170,motorcycle,motorcycle,"[351,280,564,440]","[247,274,650,446]",0.81,occluded_level: 137=0 vs 170=2; truncated: 137=no vs 170=yes
+C261,img_030.jpg,sai_thuoc_tinh,137|170,person,person,"[698,25,80,245]","[694,26,89,293]",0.75,occluded_level: 137=1 vs 170=2
+C262,img_031.jpg,bat_dong_ignore,151|170,,,"[704,355,45,32]",,,Vùng ignore không ghép được với vùng của người kia.
+C263,img_031.jpg,bat_dong_ignore,151|170,,,"[322,353,89,37]",,,Vùng ignore không ghép được với vùng của người kia.
+C264,img_031.jpg,bat_dong_ignore,151|170,,,,"[156,353,74,75]",,Vùng ignore không ghép được với vùng của người kia.
+C265,img_031.jpg,bat_dong_ignore,151|170,person,,"[191,362,13,64]",,,Chỉ vùng ignore của 170 phủ box của 151.
+C266,img_031.jpg,bat_dong_ignore,151|170,person,,"[201,364,12,58]",,,Chỉ vùng ignore của 170 phủ box của 151.
+C267,img_031.jpg,bat_dong_ignore,151|170,person,,"[165,373,16,56]",,,Chỉ vùng ignore của 170 phủ box của 151.
+C268,img_031.jpg,bo_sot_thua,151|170,bus,,"[569,313,116,113]",,,Chỉ 151 vẽ bus này. 170 bỏ sót hoặc 151 vẽ thừa.
+C269,img_031.jpg,bo_sot_thua,151|170,bus,,"[558,328,25,49]",,,Chỉ 151 vẽ bus này. 170 bỏ sót hoặc 151 vẽ thừa.
+C270,img_031.jpg,bo_sot_thua,151|170,,motorcycle,,"[64,398,41,61]",,Chỉ 170 vẽ motorcycle này. 151 bỏ sót hoặc 170 vẽ thừa.
+C271,img_031.jpg,bo_sot_thua,151|170,,motorcycle,,"[233,388,28,46]",,Chỉ 170 vẽ motorcycle này. 151 bỏ sót hoặc 170 vẽ thừa.
+C272,img_031.jpg,iou_thap,151|170,person,person,"[69,373,36,70]","[63,371,41,77]",0.75,IoU 0.75 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C273,img_031.jpg,iou_thap,151|170,person,person,"[411,362,19,45]","[408,364,17,44]",0.58,IoU 0.58 < ngưỡng 0.7 (box lệch/lỏng/thiếu phần vật)
+C274,img_031.jpg,sai_thuoc_tinh,151|170,person,person,"[239,374,21,47]","[234,374,25,49]",0.73,occluded_level: 151=3 vs 170=2
+C275,img_031.jpg,sai_thuoc_tinh,151|170,person,person,"[411,362,19,45]","[408,364,17,44]",0.58,occluded_level: 151=0 vs 170=2
+C276,img_032.jpg,bat_dong_ignore,137|170,,,,"[0,265,399,92]",,Vùng ignore không ghép được với vùng của người kia.
+C277,img_032.jpg,bat_dong_ignore,137|170,,,,"[865,274,95,62]",,Vùng ignore không ghép được với vùng của người kia.
+C278,img_032.jpg,bat_dong_ignore,137|170,person,,"[173,266,20,90]",,,Chỉ vùng ignore của 170 phủ box của 137.
+C279,img_032.jpg,bat_dong_ignore,137|170,person,,"[376,275,26,87]",,,Chỉ vùng ignore của 170 phủ box của 137.
+C280,img_032.jpg,bat_dong_ignore,137|170,person,,"[354,266,23,94]",,,Chỉ vùng ignore của 170 phủ box của 137.
+C281,img_032.jpg,bat_dong_ignore,137|170,person,,"[312,262,32,98]",,,Chỉ vùng ignore của 170 phủ box của 137.
+C282,img_032.jpg,bat_dong_ignore,137|170,person,,"[111,259,30,94]",,,Chỉ vùng ignore của 170 phủ box của 137.
+C283,img_032.jpg,bat_dong_ignore,137|170,person,,"[246,261,24,95]",,,Chỉ vùng ignore của 170 phủ box của 137.
+C284,img_032.jpg,bo_sot_thua,137|170,person,,"[548,261,32,105]",,,Chỉ 137 vẽ person này. 170 bỏ sót hoặc 137 vẽ thừa.
+C285,img_032.jpg,bo_sot_thua,137|170,person,,"[524,260,23,104]",,,Chỉ 137 vẽ person này. 170 bỏ sót hoặc 137 vẽ thừa.
+C286,img_032.jpg,bo_sot_thua,137|170,,car,,"[682,269,80,70]",,Chỉ 170 vẽ car này. 137 bỏ sót hoặc 170 vẽ thừa.
+C287,img_032.jpg,bo_sot_thua,137|170,,person,,"[562,273,35,94]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C288,img_032.jpg,iou_thap,137|170,person,person,"[472,266,26,96]","[468,266,31,96]",0.81,IoU 0.81 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C289,img_032.jpg,iou_thap,137|170,person,person,"[496,271,30,93]","[501,272,25,93]",0.81,IoU 0.81 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C290,img_032.jpg,iou_thap,137|170,person,person,"[658,276,33,90]","[660,275,26,92]",0.78,IoU 0.78 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C291,img_032.jpg,iou_thap,137|170,person,person,"[538,273,20,92]","[534,274,27,91]",0.71,IoU 0.71 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C292,img_032.jpg,sai_thuoc_tinh,137|170,person,person,"[591,266,25,100]","[590,266,25,102]",0.96,occluded_level: 137=0 vs 170=2
+C293,img_032.jpg,sai_thuoc_tinh,137|170,person,person,"[778,272,40,101]","[781,272,37,97]",0.89,occluded_level: 137=0 vs 170=2
+C294,img_032.jpg,sai_thuoc_tinh,137|170,car,car,"[0,311,154,158]","[0,304,153,180]",0.88,occluded_level: 137=2 vs 170=0
+C295,img_032.jpg,sai_thuoc_tinh,137|170,person,person,"[472,266,26,96]","[468,266,31,96]",0.81,occluded_level: 137=0 vs 170=1
+C296,img_034.jpg,bat_dong_ignore,151|170,,,"[632,238,57,24]",,,Vùng ignore không ghép được với vùng của người kia.
+C297,img_034.jpg,bo_sot_thua,151|170,person,,"[153,231,24,40]",,,Chỉ 151 vẽ person này. 170 bỏ sót hoặc 151 vẽ thừa.
+C298,img_034.jpg,bo_sot_thua,151|170,person,,"[183,232,16,30]",,,Chỉ 151 vẽ person này. 170 bỏ sót hoặc 151 vẽ thừa.
+C299,img_034.jpg,bo_sot_thua,151|170,person,,"[268,234,16,41]",,,Chỉ 151 vẽ person này. 170 bỏ sót hoặc 151 vẽ thừa.
+C300,img_034.jpg,iou_thap,151|170,person,person,"[824,221,49,90]","[825,220,46,104]",0.82,IoU 0.82 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C301,img_034.jpg,iou_thap,151|170,motorcycle,motorcycle,"[768,251,40,66]","[774,255,35,63]",0.77,IoU 0.77 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C302,img_034.jpg,iou_thap,151|170,person,person,"[584,227,37,70]","[593,227,28,69]",0.76,IoU 0.76 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C303,img_034.jpg,iou_thap,151|170,motorcycle,motorcycle,"[644,268,35,50]","[641,247,40,69]",0.60,IoU 0.60 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C304,img_034.jpg,sai_thuoc_tinh,151|170,motorcycle,motorcycle,"[858,249,102,288]","[859,250,101,287]",0.99,truncated: 151=yes vs 170=no
+C305,img_034.jpg,sai_thuoc_tinh,151|170,car,car,"[356,227,231,85]","[357,227,231,85]",0.98,occluded_level: 151=1 vs 170=2
+C306,img_034.jpg,sai_thuoc_tinh,151|170,motorcycle,motorcycle,"[284,250,26,35]","[283,249,27,34]",0.88,occluded_level: 151=1 vs 170=0
+C307,img_034.jpg,sai_thuoc_tinh,151|170,person,person,"[286,233,19,40]","[287,232,17,43]",0.85,occluded_level: 151=2 vs 170=0
+C308,img_034.jpg,sai_thuoc_tinh,151|170,person,person,"[620,239,18,37]","[622,239,14,34]",0.72,occluded_level: 151=1 vs 170=0
+C309,img_034.jpg,sai_thuoc_tinh,151|170,motorcycle,motorcycle,"[644,268,35,50]","[641,247,40,69]",0.60,occluded_level: 151=1 vs 170=0
+C310,img_035.jpg,bo_sot_thua,137|170,,car,,"[528,250,131,116]",,Chỉ 170 vẽ car này. 137 bỏ sót hoặc 170 vẽ thừa.
+C311,img_035.jpg,bo_sot_thua,137|170,,person,,"[419,224,42,52]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C312,img_035.jpg,bo_sot_thua,137|170,,person,,"[464,227,35,52]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C313,img_035.jpg,bo_sot_thua,137|170,,person,,"[570,224,19,30]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C314,img_035.jpg,bo_sot_thua,137|170,,person,,"[667,232,24,43]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C315,img_035.jpg,bo_sot_thua,137|170,,car,,"[824,244,124,64]",,Chỉ 170 vẽ car này. 137 bỏ sót hoặc 170 vẽ thừa.
+C316,img_035.jpg,co_can_review,170,person,,"[464,227,35,52]",,,"170 gắn cờ can_review (ca mơ hồ, cần chốt quy tắc)"
+C317,img_035.jpg,iou_thap,137|170,person,person,"[327,231,48,88]","[319,230,54,89]",0.80,IoU 0.80 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C318,img_035.jpg,iou_thap,137|170,motorcycle,motorcycle,"[640,300,141,203]","[644,261,142,243]",0.79,IoU 0.79 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C319,img_035.jpg,sai_thuoc_tinh,137|170,motorcycle,motorcycle,"[296,271,90,66]","[297,268,97,69]",0.88,occluded_level: 137=0 vs 170=2
+C320,img_035.jpg,sai_thuoc_tinh,137|170,person,person,"[327,231,48,88]","[319,230,54,89]",0.80,occluded_level: 137=1 vs 170=0
+C321,img_036.jpg,bat_dong_ignore,137|151,,,,"[0,170,41,126]",,Vùng ignore không ghép được với vùng của người kia.
+C322,img_036.jpg,bo_sot_thua,137|151,,car,,"[16,154,72,35]",,Chỉ 151 vẽ car này. 137 bỏ sót hoặc 151 vẽ thừa.
+C323,img_036.jpg,bo_sot_thua,137|151,,motorcycle,,"[833,198,123,115]",,Chỉ 151 vẽ motorcycle này. 137 bỏ sót hoặc 151 vẽ thừa.
+C324,img_036.jpg,bo_sot_thua,137|151,,motorcycle,,"[785,194,126,117]",,Chỉ 151 vẽ motorcycle này. 137 bỏ sót hoặc 151 vẽ thừa.
+C325,img_036.jpg,bo_sot_thua,137|151,,motorcycle,,"[760,185,95,75]",,Chỉ 151 vẽ motorcycle này. 137 bỏ sót hoặc 151 vẽ thừa.
+C326,img_036.jpg,bo_sot_thua,137|151,,motorcycle,,"[889,226,71,102]",,Chỉ 151 vẽ motorcycle này. 137 bỏ sót hoặc 151 vẽ thừa.
+C327,img_036.jpg,bo_sot_thua,137|151,,motorcycle,,"[41,190,56,140]",,Chỉ 151 vẽ motorcycle này. 137 bỏ sót hoặc 151 vẽ thừa.
+C328,img_036.jpg,bo_sot_thua,137|151,,motorcycle,,"[15,175,75,134]",,Chỉ 151 vẽ motorcycle này. 137 bỏ sót hoặc 151 vẽ thừa.
+C329,img_036.jpg,sai_lop,137|151,car,truck,"[68,27,820,668]","[66,25,824,676]",0.98,"137 gán car, 151 gán truck cho cùng một vật"
+C330,img_037.jpg,bo_sot_thua,137|151,,bus,,"[711,232,53,122]",,Chỉ 151 vẽ bus này. 137 bỏ sót hoặc 151 vẽ thừa.
+C331,img_037.jpg,sai_lop,137|151,van,truck,"[221,124,502,370]","[216,137,511,360]",0.94,"137 gán van, 151 gán truck cho cùng một vật"
+C332,img_037.jpg,sai_thuoc_tinh,137|151,bus,bus,"[1,218,237,173]","[0,217,239,176]",0.98,occluded_level: 137=1 vs 151=0
+C333,img_038.jpg,bat_dong_ignore,151|170,,,,"[0,4,960,499]",,Vùng ignore không ghép được với vùng của người kia.
+C334,img_039.jpg,bo_sot_thua,137|170,,motorcycle,,"[931,460,29,73]",,Chỉ 170 vẽ motorcycle này. 137 bỏ sót hoặc 170 vẽ thừa.
+C335,img_039.jpg,bo_sot_thua,137|170,,motorcycle,,"[463,418,37,64]",,Chỉ 170 vẽ motorcycle này. 137 bỏ sót hoặc 170 vẽ thừa.
+C336,img_039.jpg,bo_sot_thua,137|170,,motorcycle,,"[680,427,15,30]",,Chỉ 170 vẽ motorcycle này. 137 bỏ sót hoặc 170 vẽ thừa.
+C337,img_039.jpg,bo_sot_thua,137|170,,motorcycle,,"[499,424,32,48]",,Chỉ 170 vẽ motorcycle này. 137 bỏ sót hoặc 170 vẽ thừa.
+C338,img_039.jpg,bo_sot_thua,137|170,,person,,"[681,416,13,31]",,Chỉ 170 vẽ person này. 137 bỏ sót hoặc 170 vẽ thừa.
+C339,img_039.jpg,bo_sot_thua,137|170,,car,,"[783,409,51,35]",,Chỉ 170 vẽ car này. 137 bỏ sót hoặc 170 vẽ thừa.
+C340,img_039.jpg,bo_sot_thua,137|170,,car,,"[636,412,33,31]",,Chỉ 170 vẽ car này. 137 bỏ sót hoặc 170 vẽ thừa.
+C341,img_039.jpg,iou_thap,137|170,motorcycle,motorcycle,"[743,440,38,63]","[742,435,41,70]",0.83,IoU 0.83 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C342,img_039.jpg,iou_thap,137|170,person,person,"[700,411,28,75]","[697,410,27,77]",0.78,IoU 0.78 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C343,img_039.jpg,iou_thap,137|170,person,person,"[570,415,16,77]","[566,413,20,78]",0.77,IoU 0.77 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C344,img_039.jpg,iou_thap,137|170,person,person,"[587,414,21,77]","[582,415,26,75]",0.74,IoU 0.74 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C345,img_039.jpg,iou_thap,137|170,person,person,"[840,407,23,88]","[842,407,18,89]",0.74,IoU 0.74 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C346,img_039.jpg,iou_thap,137|170,person,person,"[734,405,58,99]","[734,405,42,97]",0.69,IoU 0.69 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C347,img_039.jpg,iou_thap,137|170,motorcycle,motorcycle,"[622,439,35,57]","[615,431,47,65]",0.66,IoU 0.66 < ngưỡng 0.85 (box lệch/lỏng/thiếu phần vật)
+C348,img_039.jpg,sai_thuoc_tinh,137|170,person,person,"[624,411,33,70]","[623,410,35,69]",0.93,occluded_level: 137=0 vs 170=2
+C349,img_039.jpg,sai_thuoc_tinh,137|170,person,person,"[734,405,58,99]","[734,405,42,97]",0.69,occluded_level: 137=0 vs 170=2
+C350,img_040.jpg,bo_sot_thua,151|170,tuk_tuk,,"[73,94,120,145]",,,Chỉ 151 vẽ tuk_tuk này. 170 bỏ sót hoặc 151 vẽ thừa.
+C351,img_040.jpg,bo_sot_thua,151|170,bus,,"[0,113,71,103]",,,Chỉ 151 vẽ bus này. 170 bỏ sót hoặc 151 vẽ thừa.
+C352,img_040.jpg,bo_sot_thua,151|170,bus,,"[98,0,374,131]",,,Chỉ 151 vẽ bus này. 170 bỏ sót hoặc 151 vẽ thừa.
+C353,img_040.jpg,bo_sot_thua,151|170,tuk_tuk,,"[303,66,538,349]",,,Chỉ 151 vẽ tuk_tuk này. 170 bỏ sót hoặc 151 vẽ thừa.
+C354,img_040.jpg,bo_sot_thua,151|170,,motorcycle,,"[76,473,382,167]",,Chỉ 170 vẽ motorcycle này. 151 bỏ sót hoặc 170 vẽ thừa.
+C355,img_040.jpg,sai_thuoc_tinh,151|170,car,car,"[181,76,231,182]","[185,83,235,174]",0.91,occluded_level: 151=1 vs 170=2
